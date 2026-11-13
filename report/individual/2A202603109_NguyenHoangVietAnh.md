@@ -1,4 +1,4 @@
-# Báo cáo cá nhân — HoVaTen-MSSV
+# Báo cáo cá nhân — NguyenHoangVietAnh-2A202603109
 
 Đổi tên file theo quy tắc `MSSV_HoTen.md`. Ví dụ: `20241234_NguyenVanAn.md`.
 
@@ -6,15 +6,15 @@ Dữ liệu: 12 ảnh người COCO val2017 (Lin et al., 2014) và 8 ảnh chân
 
 ## 0. Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email:
-- Link repository:
+- Họ tên: Nguyen Hoang Viet Anh
+- MSSV: 2A202603109
+- Email: 26ai.anhnhv@vinuni.edu.vn
+- Link repository: https://github.com/MaccaRinn/K5-L2-KeypointPose-NguyenHoangVietAnh-2A202603109-Student.git
 - Phiên bản CVAT (Help → About):
-- Máy: hệ điều hành ___ · RAM ___ GB · chạy CVAT chế độ đầy đủ / lite
-- Bộ ảnh (`src/exports/assignment.json` do `lab.py setup` tạo): có / không
-- Giờ bắt đầu:
-- Giờ kết thúc:
+- Máy: hệ điều hành Window · RAM 16 GB · chạy CVAT chế độ đầy đủ / lite
+- Bộ ảnh (`src/exports/assignment.json` do `lab.py setup` tạo): có 
+- Giờ bắt đầu: 17h00
+- Giờ kết thúc: 22h00
 
 ## 1. Kiểm tra label (CP0)
 
@@ -63,15 +63,18 @@ Mỗi điểm bạn phân vân một dòng, nhất là phân vân giữa `v = 1`
 Mã lỗi dùng đúng một trong: `lr_swap`, `vis_flag`, `position`, `missing`, `extra`, `ok`.
 
 | Ảnh | Người / mặt | Điểm | Mã lỗi | Ghi chú | Đã sửa? |
-|---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
+|  ---|---          |---   |--- py  |---      |---      |
+|   1 |     1       |      |        |         |         |
+|   2 |     1       |      |        |         |         |
+|   3 |     1       |      |        |         |         |
+|   4 |     1       |      |        |         |         |
+|   5 |     1       |      |        |         |         |
+|   6 |     3       |      |        |         |         |
+|   7 |     2       |      |        |         |         |
+|   8 |     2       |      |        |         |         |
+|   9 |     1       |      |        |         |         |
+|   10|     1       |      |        |         |         |
+|   11|     1       |      |        |         |         |
 
 Tổng hợp số lỗi theo mã:
 
@@ -95,7 +98,7 @@ Tự kiểm tay trong file JSON:
 
 Sau khi xuất, CVAT ghi `occluded` thành `v = ___` và `outside` thành `v = ___`. Tọa độ của điểm `outside` trong file là `0, 0` hay tọa độ cũ? ___
 
-Hai job đã chuyển sang completed trên CVAT? Có / Không
+Hai job đã chuyển sang completed trên CVAT? Không
 
 Dán phần **TÓM TẮT** in ra từ `src/check_submission.py`:
 
@@ -131,11 +134,11 @@ Nguồn ảnh: COCO val2017 / Wikimedia Commons.
 
 1. Lỗi bạn mắc nhiều nhất hôm nay, và cách bạn sẽ tránh ở dự án thật:
 
-   ...
+   Hiện tại không rõ lỗi đối với người ko nhìn thấy mặt
 
 2. Một quy tắc bạn đề xuất thêm vào guideline (kèm ảnh ví dụ nếu có):
 
-   ...
+   Cần phải ẩn đi phần mặt người nếu như ko thể nhìn thấy face
 
 3. Nhãn của bạn đi vào model ở đâu? Chọn một lỗi bạn đã sửa và nói nó sẽ làm model học sai thế nào (heatmap, trọng số trong loss, hay bước lật ảnh):
 
@@ -143,7 +146,7 @@ Nguồn ảnh: COCO val2017 / Wikimedia Commons.
 
 ## 8. Khó khăn và lỗi kỹ thuật
 
-...
+Chưa xác định được phần lỗi của bạn thây sau khi kiểm tra
 
 ## Bonus (nếu làm)
 
